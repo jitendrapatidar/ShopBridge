@@ -1,0 +1,187 @@
+﻿@page
+@model SB.Web.Pages.Admin.EditInventoryModel
+@{
+    ViewData["Title"] = "Inventory Add";
+    Layout = "~/Pages/Shared/_LayoutAdmin.cshtml";
+}
+<div class="wrapper">
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+        <!-- Left navbar links -->
+    </nav>
+    <!-- /.navbar -->
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+        <!-- Brand Logo -->
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <!-- Sidebar user (optional) -->
+            <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+
+                <div class="info">
+                    <a href="#" class="d-block">Shop Bridge</a>
+                </div>
+            </div>
+
+            <!-- SidebarSearch Form -->
+            <!-- Sidebar Menu -->
+            <nav class="mt-2">
+                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                    <!-- Add icons to the links using the .nav-icon class
+                    with font-awesome or any other icon font library -->
+
+                    <li class="nav-item">
+                        <a href="/Admin/Index" class="nav-link">
+                            <i class="nav-icon fas fa-file"></i>
+                            <p>Inventory List</p>
+                        </a>
+                    </li>
+
+
+
+                </ul>
+            </nav>
+            <!-- /.sidebar-menu -->
+        </div>
+        <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <div class="container-fluid">
+                <div class="row mb-2">
+                    <div class="col-sm-6">
+                        <h1>Add Inventory</h1>
+                    </div>
+
+                </div>
+            </div><!-- /.container-fluid -->
+        </section>
+
+        <!-- Main content -->
+        <section class="content">
+
+            <!-- Default box  Inventory-->
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Add</h3>
+
+                </div>
+                <div class="card-body">
+                    <form method="post"
+                          role="form"
+                          class="form-horizontal">
+                        <div class="form-main">
+                            <div asp-validation-summary="All" class="text-danger"></div>
+                            <input asp-for="Inventory.Id" type="hidden" />
+                            <div class="form-group">
+                                <label for="inputName">Name</label>
+
+                                @if (Model.Disabled == false)
+                                {
+                                    <input asp-for="Inventory.Name" type="text" placeholder="Name" class="form-control" />
+                                }
+                                else
+                                {
+                                    <input asp-for="Inventory.Name" type="text" placeholder="Name" class="form-control" readonly="readonly" />
+                                }
+                                <span asp-validation-for="Inventory.Name" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputDescription">Description</label>
+                                @if (Model.Disabled == false)
+                                {
+                                    <textarea asp-for="Inventory.Description" class="form-control" rows="4"></textarea>
+                                }
+                                else
+                                {
+                                    <textarea asp-for="Inventory.Description" class="form-control" rows="4" readonly="readonly"></textarea>
+                                }
+                                <span asp-validation-for="Inventory.Description" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputStatus">Status</label>
+                                @if (Model.Disabled == false)
+                                {
+                                    <select asp-for="Inventory.Complated" class="form-control custom-select">
+
+                                        <option selected disabled>Select one</option>
+                                        <option value="New">New</option>
+                                        <option value="On Hold">On Hold</option>
+                                        <option value="Canceled">Canceled</option>
+                                        <option value="Success">Success</option>
+                                    </select>
+                                }
+                                else
+                                {
+                                    <select asp-for="Inventory.Complated" class="form-control custom-select" readonly="readonly">
+
+                                        <option selected disabled>Select one</option>
+                                        <option value="New">New</option>
+                                        <option value="On Hold">On Hold</option>
+                                        <option value="Canceled">Canceled</option>
+                                        <option value="Success">Success</option>
+                                    </select>
+                                }
+
+                            </div>
+                            <div class="form-group">
+                                <label for="inputClientCompany">Price</label>
+                                @if (Model.Disabled == false)
+                                {
+                                    <input asp-for="Inventory.Price" id="UserName" type="text" placeholder="Name" class="form-control" />
+                                }
+                                else
+                                {
+                                    <input asp-for="Inventory.Price" id="UserName" type="text" placeholder="Name" class="form-control" readonly="readonly" />
+                                }
+
+                                <span asp-validation-for="Inventory.Price" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                @if (Model.Disabled == false)
+                                {
+                                    <input type="checkbox" asp-for="Inventory.IsActive"/>
+                                }
+                                else
+                                {
+                                    <input type="checkbox" asp-for="Inventory.IsActive" readonly="readonly" />
+                                }
+
+                                <label for="remember">
+                                    Is Active
+                                </label>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+
+                                    @if (Model.Disabled == false)
+                                    {
+                                        <a href="/Admin/Index" class="btn btn-secondary">Cancel</a>
+                                        <input type="submit" value="Update" class="btn btn-success float-right">
+                                    }
+                                    else
+                                    {
+                                        <a href="/Admin/Index" class="btn btn-secondary">Back</a>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- /.card-body -->
+                <div class="card-footer">
+
+                </div>
+                <!-- /.card-footer-->
+            </div>
+            <!-- /.card -->
+
+        </section>
+        <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+
+</div>

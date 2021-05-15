@@ -1,0 +1,219 @@
+﻿@page
+
+@model SB.Web.Pages.Admin.IndexModel
+@{
+    ViewData["Title"] = "Shop Bridge DatsBord";
+    Layout = "~/Pages/Shared/_LayoutAdmin.cshtml";
+}
+<link href="~/AdminLTE/alertifyjs/alertify.css" rel="stylesheet" />
+<div class="wrapper">
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+        <!-- Left navbar links -->
+
+
+
+    </nav>
+    <!-- /.navbar -->
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+        <!-- Brand Logo -->
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <!-- Sidebar user (optional) -->
+            <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+
+                <div class="info">
+                    <a href="#" class="d-block">Shop Bridge</a>
+                </div>
+            </div>
+
+            <!-- SidebarSearch Form -->
+            <!-- Sidebar Menu -->
+            <nav class="mt-2">
+                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                    <!-- Add icons to the links using the .nav-icon class
+                    with font-awesome or any other icon font library -->
+
+                    <li class="nav-item">
+                        <a href="/Admin/Index" class="nav-link">
+                            <i class="nav-icon fas fa-file"></i>
+                            <p>Inventory List</p>
+                        </a>
+                    </li>
+
+
+
+                </ul>
+            </nav>
+            <!-- /.sidebar-menu -->
+        </div>
+        <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+
+
+        <!-- Main content -->
+        <section class="content">
+
+            <!-- Default box -->
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Inventory List</h3>
+
+                    <div class="card-tools">
+                        <a class="btn btn-info btn-sm" href="/Admin/AddInventory">
+
+                            <i class="fas fa-plus">
+                            </i>
+                            Add Inventory
+                        </a>
+                    </div>
+
+                </div>
+                @*Id	Name	ShortDescription	Description	Price	IsComplated	ImgPath	OnDate*@
+                <div class="card-body p-0">
+
+
+
+
+                    <table class="table table-striped projects">
+                        <thead>
+                            <tr>
+
+                                <th style="width: 20%">
+                                    Name
+                                </th>
+                                <th style="width: 30%">
+                                    ShortDescription
+                                </th>
+                                <th>
+                                    Price
+                                </th>
+                                <th style="width: 8%" class="text-center">
+                                    Status
+                                </th>
+
+                                <th style="width: 20%">
+
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var inventory in Model.Inventory)
+                            {
+                                <tr>
+
+                                    <td>
+                                        @inventory.Name
+                                    </td>
+
+                                    <td class="project_progress">
+                                        @inventory.Description
+                                    </td>
+                                    <td class="project_progress">
+                                        @inventory.Price
+                                    </td>
+
+                                    <td class="project-state">
+                                        <span class="badge">@inventory.Complated</span>
+                                    </td>
+
+
+                                    <td class="project-actions text-right">
+                                        <a class="btn btn-primary btn-sm" href="/Admin/EditInventory?T=v&id=@inventory.Id">
+                                            <i class="fas fa-folder">
+                                            </i>
+                                            View
+                                        </a>
+                                        <a class="btn btn-info btn-sm" href="/Admin/EditInventory?T=e&id=@inventory.Id">
+                                            <i class="fas fa-pencil-alt">
+                                            </i>
+                                            Edit
+                                        </a>
+                                        <a class="btn btn-danger btn-sm" href="#" onclick="Delete(@inventory.Id)">
+                                            <i class="fas fa-trash">
+                                            </i>
+                                            Delete
+                                        </a>
+                                    </td>
+                                </tr>
+
+                            }
+                        </tbody>
+                    </table>
+                    <input type="hidden" id="apiUrl" value="@Model.BaseUri" />
+                </div>
+                <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+
+        </section>
+        <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+
+    <footer class="main-footer">
+        <div class="float-right d-none d-sm-block">
+
+        </div>
+        <strong>Copyright &copy; 2021-2022 All rights reserved.</strong>
+    </footer>
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+        <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
+</div>
+@section scripts{
+   
+    <script src="~/AdminLTE/alertify.js"></script>
+    <script>
+
+
+        function Delete(id) {
+            var Url = $("#apiUrl").val() + "Inventory/DeleteById/" + id;
+
+            alertify.confirm('Shop Bridge', 'Are you sure you want to delete this record?', function () {
+
+                $.ajax({
+                    type: 'Get',
+                    crossDomain: true,
+                    dataType: 'jsonp',
+                    url: Url,
+                    success: function (data) {
+                        bindList(data);
+                        fnSuccessDelete();
+                    },
+                    error: function (err) {
+                       
+                        console.error(err);
+                        window.location.reload(true);
+                    }
+
+                })
+            }, null);
+        }
+
+        function fnSuccessDelete() {
+            
+            var successMessage = 'Deleted Successfully'
+            if (successMessage != '') {
+                alertify.success(successMessage);
+                window.location.reload(true);
+            }
+        }
+
+ 
+        function bindList(data) {
+            var newDoc = document.open("text/html", "replace");
+            newDoc.write(data);
+            newDoc.close();
+        }
+
+    </script>
+}
+ 

@@ -1,0 +1,10 @@
+E:\WEBTESTDEMO\ShopBridgeManage\Databae\SB.dbProject\bin\Debug\SB.dbProject.dacpac
+E:\WEBTESTDEMO\ShopBridgeManage\Databae\SB.dbProject\bin\Debug\SB.dbProject.dll
+E:\WEBTESTDEMO\ShopBridgeManage\Databae\SB.dbProject\bin\Debug\SB.dbProject.pdb
+E:\WEBTESTDEMO\ShopBridgeManage\Databae\SB.dbProject\obj\Debug\SB.dbProject.sqlprojAssemblyReference.cache
+E:\WEBTESTDEMO\ShopBridgeManage\Databae\SB.dbProject\obj\Debug\SB.dbProject.dll
+E:\WEBTESTDEMO\ShopBridgeManage\Databae\SB.dbProject\obj\Debug\SB.dbProject.pdb
+E:\WEBTESTDEMO\ShopBridgeManage\Databae\SB.dbProject\obj\Debug\Model.xml
+E:\WEBTESTDEMO\ShopBridgeManage\Databae\SB.dbProject\obj\Debug\refactor.xml
+E:\WEBTESTDEMO\ShopBridgeManage\Databae\SB.dbProject\obj\Debug\postdeploy.sql
+E:\WEBTESTDEMO\ShopBridgeManage\Databae\SB.dbProject\obj\Debug\predeploy.sql

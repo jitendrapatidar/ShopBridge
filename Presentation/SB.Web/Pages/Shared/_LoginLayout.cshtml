@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+    <environment names="Development">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="~/AdminLTE/plugins/fontawesome-free/css/all.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/AdminLTE/dist/css/ionicons.min.css" asp-append-version="true">
+        <!-- icheck bootstrap -->
+        <link rel="stylesheet" href="~/AdminLTE/plugins/icheck-bootstrap/icheck-bootstrap.min.css" asp-append-version="true">
+        <!-- Theme style -->
+        <link rel="stylesheet" href="~/AdminLTE/dist/css/adminlte.min.css" asp-append-version="true">
+        <link href="~/AdminLTE/plugins/fontawesome-free/fonts.googleapis.css" rel="stylesheet" asp-append-version="true">
+
+    </environment>
+    <environment names="Development">
+
+        <!-- jQuery -->
+        <script src="~/AdminLTE/plugins/jquery/jquery.min.js" asp-append-version="true"></script>
+        <!-- Bootstrap 4 -->
+        <script src="~/AdminLTE/plugins/bootstrap/js/bootstrap.bundle.min.js" asp-append-version="true"></script>
+        <!-- AdminLTE App -->
+        <script src="~/AdminLTE/dist/js/adminlte.min.js" asp-append-version="true"></script>
+
+    </environment>
+</head>
+<body class="hold-transition login-page">
+     
+        @RenderBody()
+     
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2021 - Shop Bridge 
+        </div>
+    </footer>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

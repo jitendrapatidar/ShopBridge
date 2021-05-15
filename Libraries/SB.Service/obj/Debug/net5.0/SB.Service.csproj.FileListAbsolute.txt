@@ -1,0 +1,17 @@
+E:\WEBTESTDEMO\ShopBridgeManage\Libraries\SB.Service\bin\Debug\net5.0\SB.Service.deps.json
+E:\WEBTESTDEMO\ShopBridgeManage\Libraries\SB.Service\bin\Debug\net5.0\SB.Service.dll
+E:\WEBTESTDEMO\ShopBridgeManage\Libraries\SB.Service\bin\Debug\net5.0\ref\SB.Service.dll
+E:\WEBTESTDEMO\ShopBridgeManage\Libraries\SB.Service\bin\Debug\net5.0\SB.Service.pdb
+E:\WEBTESTDEMO\ShopBridgeManage\Libraries\SB.Service\bin\Debug\net5.0\SB.Model.dll
+E:\WEBTESTDEMO\ShopBridgeManage\Libraries\SB.Service\bin\Debug\net5.0\SB.Repository.dll
+E:\WEBTESTDEMO\ShopBridgeManage\Libraries\SB.Service\bin\Debug\net5.0\SB.Model.pdb
+E:\WEBTESTDEMO\ShopBridgeManage\Libraries\SB.Service\bin\Debug\net5.0\SB.Repository.pdb
+E:\WEBTESTDEMO\ShopBridgeManage\Libraries\SB.Service\obj\Debug\net5.0\SB.Service.csprojAssemblyReference.cache
+E:\WEBTESTDEMO\ShopBridgeManage\Libraries\SB.Service\obj\Debug\net5.0\SB.Service.GeneratedMSBuildEditorConfig.editorconfig
+E:\WEBTESTDEMO\ShopBridgeManage\Libraries\SB.Service\obj\Debug\net5.0\SB.Service.AssemblyInfoInputs.cache
+E:\WEBTESTDEMO\ShopBridgeManage\Libraries\SB.Service\obj\Debug\net5.0\SB.Service.AssemblyInfo.cs
+E:\WEBTESTDEMO\ShopBridgeManage\Libraries\SB.Service\obj\Debug\net5.0\SB.Service.csproj.CoreCompileInputs.cache
+E:\WEBTESTDEMO\ShopBridgeManage\Libraries\SB.Service\obj\Debug\net5.0\SB.Service.csproj.CopyComplete
+E:\WEBTESTDEMO\ShopBridgeManage\Libraries\SB.Service\obj\Debug\net5.0\SB.Service.dll
+E:\WEBTESTDEMO\ShopBridgeManage\Libraries\SB.Service\obj\Debug\net5.0\ref\SB.Service.dll
+E:\WEBTESTDEMO\ShopBridgeManage\Libraries\SB.Service\obj\Debug\net5.0\SB.Service.pdb

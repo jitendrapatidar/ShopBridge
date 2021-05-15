@@ -1,0 +1,12 @@
+E:\WEBTESTDEMO\ShopBridgeManage\Libraries\SB.Model\bin\Debug\net5.0\SB.Model.deps.json
+E:\WEBTESTDEMO\ShopBridgeManage\Libraries\SB.Model\bin\Debug\net5.0\SB.Model.dll
+E:\WEBTESTDEMO\ShopBridgeManage\Libraries\SB.Model\bin\Debug\net5.0\ref\SB.Model.dll
+E:\WEBTESTDEMO\ShopBridgeManage\Libraries\SB.Model\bin\Debug\net5.0\SB.Model.pdb
+E:\WEBTESTDEMO\ShopBridgeManage\Libraries\SB.Model\obj\Debug\net5.0\SB.Model.GeneratedMSBuildEditorConfig.editorconfig
+E:\WEBTESTDEMO\ShopBridgeManage\Libraries\SB.Model\obj\Debug\net5.0\SB.Model.AssemblyInfoInputs.cache
+E:\WEBTESTDEMO\ShopBridgeManage\Libraries\SB.Model\obj\Debug\net5.0\SB.Model.AssemblyInfo.cs
+E:\WEBTESTDEMO\ShopBridgeManage\Libraries\SB.Model\obj\Debug\net5.0\SB.Model.csproj.CoreCompileInputs.cache
+E:\WEBTESTDEMO\ShopBridgeManage\Libraries\SB.Model\obj\Debug\net5.0\SB.Model.dll
+E:\WEBTESTDEMO\ShopBridgeManage\Libraries\SB.Model\obj\Debug\net5.0\ref\SB.Model.dll
+E:\WEBTESTDEMO\ShopBridgeManage\Libraries\SB.Model\obj\Debug\net5.0\SB.Model.pdb
+E:\WEBTESTDEMO\ShopBridgeManage\Libraries\SB.Model\obj\Debug\net5.0\SB.Model.csprojAssemblyReference.cache

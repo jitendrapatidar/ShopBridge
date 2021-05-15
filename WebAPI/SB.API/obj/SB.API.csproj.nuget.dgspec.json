@@ -1,0 +1,292 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\WEBTESTDEMO\\ShopBridgeManage\\WebAPI\\SB.API\\SB.API.csproj": {}
+  },
+  "projects": {
+    "E:\\WEBTESTDEMO\\ShopBridgeManage\\Libraries\\SB.Model\\SB.Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\WEBTESTDEMO\\ShopBridgeManage\\Libraries\\SB.Model\\SB.Model.csproj",
+        "projectName": "SB.Model",
+        "projectPath": "E:\\WEBTESTDEMO\\ShopBridgeManage\\Libraries\\SB.Model\\SB.Model.csproj",
+        "packagesPath": "C:\\Users\\TwoX Infotech\\.nuget\\packages\\",
+        "outputPath": "E:\\WEBTESTDEMO\\ShopBridgeManage\\Libraries\\SB.Model\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\TwoX Infotech\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\WEBTESTDEMO\\ShopBridgeManage\\Libraries\\SB.Repository\\SB.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\WEBTESTDEMO\\ShopBridgeManage\\Libraries\\SB.Repository\\SB.Repository.csproj",
+        "projectName": "SB.Repository",
+        "projectPath": "E:\\WEBTESTDEMO\\ShopBridgeManage\\Libraries\\SB.Repository\\SB.Repository.csproj",
+        "packagesPath": "C:\\Users\\TwoX Infotech\\.nuget\\packages\\",
+        "outputPath": "E:\\WEBTESTDEMO\\ShopBridgeManage\\Libraries\\SB.Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\TwoX Infotech\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\WEBTESTDEMO\\ShopBridgeManage\\Libraries\\SB.Service\\SB.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\WEBTESTDEMO\\ShopBridgeManage\\Libraries\\SB.Service\\SB.Service.csproj",
+        "projectName": "SB.Service",
+        "projectPath": "E:\\WEBTESTDEMO\\ShopBridgeManage\\Libraries\\SB.Service\\SB.Service.csproj",
+        "packagesPath": "C:\\Users\\TwoX Infotech\\.nuget\\packages\\",
+        "outputPath": "E:\\WEBTESTDEMO\\ShopBridgeManage\\Libraries\\SB.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\TwoX Infotech\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "E:\\WEBTESTDEMO\\ShopBridgeManage\\Libraries\\SB.Model\\SB.Model.csproj": {
+                "projectPath": "E:\\WEBTESTDEMO\\ShopBridgeManage\\Libraries\\SB.Model\\SB.Model.csproj"
+              },
+              "E:\\WEBTESTDEMO\\ShopBridgeManage\\Libraries\\SB.Repository\\SB.Repository.csproj": {
+                "projectPath": "E:\\WEBTESTDEMO\\ShopBridgeManage\\Libraries\\SB.Repository\\SB.Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\WEBTESTDEMO\\ShopBridgeManage\\WebAPI\\SB.API\\SB.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\WEBTESTDEMO\\ShopBridgeManage\\WebAPI\\SB.API\\SB.API.csproj",
+        "projectName": "SB.API",
+        "projectPath": "E:\\WEBTESTDEMO\\ShopBridgeManage\\WebAPI\\SB.API\\SB.API.csproj",
+        "packagesPath": "C:\\Users\\TwoX Infotech\\.nuget\\packages\\",
+        "outputPath": "E:\\WEBTESTDEMO\\ShopBridgeManage\\WebAPI\\SB.API\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\TwoX Infotech\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "E:\\WEBTESTDEMO\\ShopBridgeManage\\Libraries\\SB.Model\\SB.Model.csproj": {
+                "projectPath": "E:\\WEBTESTDEMO\\ShopBridgeManage\\Libraries\\SB.Model\\SB.Model.csproj"
+              },
+              "E:\\WEBTESTDEMO\\ShopBridgeManage\\Libraries\\SB.Repository\\SB.Repository.csproj": {
+                "projectPath": "E:\\WEBTESTDEMO\\ShopBridgeManage\\Libraries\\SB.Repository\\SB.Repository.csproj"
+              },
+              "E:\\WEBTESTDEMO\\ShopBridgeManage\\Libraries\\SB.Service\\SB.Service.csproj": {
+                "projectPath": "E:\\WEBTESTDEMO\\ShopBridgeManage\\Libraries\\SB.Service\\SB.Service.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.10.13, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

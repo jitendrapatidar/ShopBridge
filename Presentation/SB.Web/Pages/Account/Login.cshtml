@@ -1,0 +1,82 @@
+﻿@page
+ @model SB.Web.Pages.Account.LoginModel
+ @{
+    ViewData["Title"] = "Login";
+    Layout = "~/Pages/Shared/_LoginLayout.cshtml";
+}
+<div class="login-logo">
+    <a href="#"><b>Shop Bridge</b></a>
+</div>
+<div class="card">
+    <div class="card-body login-card-body">
+        <p class="login-box-msg">Sign in to start your session</p>
+        
+        <form method="post"
+              role="form"
+              class="form-horizontal">
+            <div class="form-main">
+                <div asp-validation-summary="All" class="text-danger"></div>
+                <div class="input-group mb-3">
+                    <input asp-for="Login.UserName" id="UserName" type="text" placeholder="UserName" class="form-control" />
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-envelope"></span>
+                        </div>
+                    </div>
+                    <span asp-validation-for="Login.UserName" class="text-danger"></span>
+                </div>
+                <div class="input-group mb-3">
+                    <input asp-for="Login.Password" id="Password" placeholder="Password" class="form-control" type="password" />
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-lock"></span>
+                        </div>
+                    </div>
+                    <span asp-validation-for="Login.Password" class="text-danger"></span>
+                </div>
+                <div class="row">
+
+                    <div class="col-8">
+                        <div class="icheck-primary">
+                            <input type="checkbox" id="remember" asp-for="Login.RememberMe">
+                            <label for="remember">
+                                Remember Me
+                            </label>
+                        </div>
+                    </div>
+                   
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+                    </div>
+                </div>
+
+                </div>
+</form>
+        <div class="social-auth-links text-center mb-3">
+            <p>- OR -</p>
+            <a href="#" class="btn btn-block btn-primary">
+                <i class="fab fa-facebook mr-2"></i> Sign in using Facebook
+            </a>
+            <a href="#" class="btn btn-block btn-danger">
+                <i class="fab fa-google-plus mr-2"></i> Sign in using Google+
+            </a>
+        </div>
+
+
+        <p class="mb-1">
+            <a href="forgot-password.html">I forgot my password</a>
+        </p>
+        <p class="mb-0">
+            <a href="register.html" class="text-center">Register a new membership</a>
+        </p>
+    </div>
+</div>
+
+@section Scripts 
+{
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}
+
